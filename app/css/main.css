@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: Arial; }
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  min-height: 55vw;
+  overflow: hidden; }
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+  overflow: hidden; }
+
+.layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw; }
+
+.layer .content-body {
+  width: 25%;
+  position: absolute;
+  top: 30%;
+  margin-right: 0%;
+  margin-left: 0%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #00b4f1; }
+
+.layer .content-body img {
+  width: 10vw;
+  top: 0%; }
+
+.layer .content-body p {
+  width: 20vw;
+  margin-left: 2vw; }
+
+.layer img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.layer h1 {
+  font-size: 2em; }
+
+.bottom {
+  background-color: rgba(0, 0, 0, 0.49);
+  z-index: 1; }
+
+.bottom .content-body {
+  right: 5%; }
+
+.top {
+  background-color: #ffffff;
+  z-index: 2;
+  width: 50vw; }
+
+.bottom p {
+  color: #ffffff; }
+
+.top p {
+  color: #222222; }
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #ffb030;
+  width: 8px;
+  top: 0;
+  left: 50%;
+  z-index: 3; }
+
+.skewed .handle {
+  top: 50%;
+  -webkit-transform: rotate(30deg) translateY(-50%);
+      -ms-transform: rotate(30deg) translateY(-50%);
+          transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top; }
+
+.skewed .top {
+  -webkit-transform: skew(-30deg);
+      -ms-transform: skew(-30deg);
+          transform: skew(-30deg);
+  margin-left: -1200px;
+  width: -webkit-calc(50vw + 1200px);
+  width: calc(50vw + 1200px); }
+
+.skewed .top .content-wrap {
+  -webkit-transform: skew(30deg);
+      -ms-transform: skew(30deg);
+          transform: skew(30deg);
+  margin-left: 1200px; }
+
+@media (max-width: 950px) {
+  body {
+    font-size: 50%; }
+  img {
+    width: 20vw; }
+  .layer .content-body p {
+    display: none; }
+  .layer .content-body {
+    top: 30%; } }
